@@ -1,0 +1,365 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+
+<script src="SpryAssets/SpryCollapsiblePanel.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryCollapsiblePanel.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 40px;
+	color: #000;
+}
+body {
+	background-color: #9999FF;
+	font-size: 20px;
+}
+a:link {
+	color: #FFFF00;
+}
+</style>
+</head>
+
+<body>
+<table width="1500">
+  <tr>
+    <th width="7" scope="col">&nbsp;</th>
+    <th colspan="2" scope="col"><H1>Amethyst App Guide</H1>
+    <p>unofficial &amp; relatively thorough</p></th>
+    <th width="7" scope="col">&nbsp;</th>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="2"><div align="center"><a href="https://amethyst.social/" target="new"><img src="optimized/(1)logo.jpg" width="200" height="220" alt="amethyst logo" /></a></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td width="1469" valign="middle"><div align="center">
+      <div id="CollapsiblePanel1" class="CollapsiblePanel">
+        <p>Amethyst is an Android client for the NOSTR social protocol, the decentralized, censorship resistant, cryptographically secure alternative to social media (and some other stuff), where you are in control of your social graph and content. Amethyst is feature rich, allowing you to partake in a wide array of activities with your friends, family &amp; communities online.  To download &amp; install, visit <a href="https://nostree.me/npub1gcxzte5zlkncx26j68ez60fzkvtkm9e0vrwdcvsjakxf9muqewqlfnj5z/amethyst">amethyst.social</a> for available options.  If you are unfamiliar with nostr, visit <a href="https://nostr.how/en/what-is-nostr">nostr.how</a> and <a href="https://www.whynostr.com/" target="new">whynostr.com</a> to learn more.</p>
+        <h1>TO REPORT BUGS, ISSUES OR FEATURE REQUESTS, VISIT:<a href="https://gitworkshop.dev/repo/amethyst"> gitworkshop.dev/repo/amethyst</a></h1>
+        <p>&nbsp;</p>
+        <h1>GETTING STARTED</h1>
+        <p align="center"> - install and open Amethyst</p>
+        <p align="center">- agree to terms of service</p>
+        <p align="center">- set up your screen name </p>
+        <p align="center">(or not... your npub or public nostr key works too. You can always change it later.)</p>
+        <p align="center">&nbsp;</p>
+        <p align="center">TAKE A MOMENT TO EXPORT YOUR PRIVATE KEY (nsec)TO A SAFE PLACE. IT IS LIKE A PERMANENT PASSWORD THAT YOU CAN USE ACROSS ALL NOSTR APPS AND IT CANNOT BE CHANGED. Logging out without saving it will leave you unable to access your profile. Amethyst offers in-app nsec encryption to more safely store your private key on devices. This is highly recommended. Writing it down works, too. Maybe do both.</p>
+        <p align="center"> If you already have a nostr profile you would like to use, just sign in with your nostr signer extention or whatever method you prefer.</p>
+        <p align="center">Let’s set up your profile and explore the app.  Click on the robot, pfp, or swipe right to access your main menu. Tap &quot;Profile&quot;...      </p>
+        <div class="CollapsiblePanelContent">
+          <p>&nbsp;</p>
+</div>
+      </div>
+    </div></td>
+    
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="2"><div align="center">
+      <div id="CollapsiblePanel2" class="CollapsiblePanel">
+        <div class="CollapsiblePanelTab" tabindex="0"><img src="optimized/(8)profile-options.jpg" width="432" height="103" /align="center" /><a name="Profile" id="Profile"></a>Profile Setup &darr; </div>
+        <div class="CollapsiblePanelContent">
+          <p>Click on the middle Edit icon to get started.  Some of these fields are obvious, fill them in as you wish.  Some are a little less obvious:</p>
+          <p> *Avatar and Banner URL: Unlike traditional socials, there is no central entity to store your media. You can choose any photo or video you have hosted anywhere online and enter the URL here. It can be from other socials, your own webpage, home server,or even a livestream.</p>
+          <p> *NOSTR Address:  This is a way to claim ownership of your profile through some an external source, such as a webpage you own.  There are entities that will host this for you as well. It is not necessary, overall. Other nostr applications may require this to use their services.</p>
+          <p>*LN Address:  NOSTR supports Bitcoin Lighting payments through zaps for tipping and service payment.  We will talk about zaps more later on in this guide.  If this is all foreign language to you, just skip for now.  Study Bitcoin and come back to this when you’re ready.</p>
+          <p>*Twitter/Mastadon/GithubGist w/proof: This is another method of verifying ownership of your profile via other social sites. </p>
+          <p>Click save &amp; let’s start exploring...</p>
+        </div>
+      </div>
+    </div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="2"><div align="center">
+      <div id="CollapsiblePanel3" class="CollapsiblePanel">
+        <div class="CollapsiblePanelTab" tabindex="0"><img src="optimized/(21)feed-menu.jpg" width="288" height="63" /align="center" /> Feeds &darr; </div>
+        <div class="CollapsiblePanelContent">
+          <p>Tap your back button to return to your main feed (yes, its still blank)...</p>
+          <p>Top center is your feed menu. You will have 3 options by default &amp; you can add more by following hashtags, creating lists, and joining communities. If you discovered nostr through another person, you can search them by username or npub with the search icon.</p>
+          <p> *Hashtags:  Hashtags are a simple and effective way to find and share content on nostr.  Search a hashtag by typing it in your search box. click on the purple tag for notes and the option to follow the tag. Once followed, this will create a custom feed in your feed menu. The same appliesfor any subsequent tags. To unfollow any hashtag, visit your profile and find the followed tags tab in the ribbon. #grownostr and #plebchain will yield a variety of results.</p>
+          <p>*Follows:Start finding people that may post notes that match your interests. Click on the profile photo of anyone you see and it will bring you to their profile. You can look through their follow lists too and find even more.</p>
+          <p> Following lists are very unstable, due to the way nostr decentralization works.  You can look through but results will vary. </p>
+          <p>*Lists:  Amethyst supports lists curated through other nostr apps, like <a href="https://listr.lol/">listr.lol</a> where you can create your own lists &amp; subscribe to those made by others. They will then show up in your Amethyst feed menu.</p>
+          <p>*Global is a feed of random notes pulled from relays that you are connected to.  Interesting people and content can be found here, but also literally anything, so this is a good place to flex your freedom muscle and populate your 3rd list... MUTE.</p>
+          <p> If you see something offensive, long press the blank space of that note. You will be presented a grid menu. The terms, mute and block, are used synonymous within Amethyst... so hit Block and congratulations, you’ve taken the first steps in controlling your own experience! </p>
+          <p>This grid menu also gives you the option to follow/unfollow,  copy text/author ID/note ID, copy a link to share, broadcast to relays, or report illegal content to relay operators.</p>
+          <p>*Conversation Tab: On Global, this is an easy way to discover people. It can help you find interesting discussions among your follows as well.          </p>
+          <h1></h1>
+        </div>
+      </div>
+    </div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="2"><div align="center">
+      <div id="CollapsiblePanel4" class="CollapsiblePanel">
+        <div class="CollapsiblePanelTab" tabindex="0"><img src="optimized/(16)bottom-home.jpg" width="677" height="90" /align="center" /> Discovery &darr;</div>
+        <div class="CollapsiblePanelContent">
+          <p>Beyond home, you have:</p>
+          <p> DMs and chats. You will need to set up a dm relay for those to function. <a href="#Relays">More on that under the "Relays" section of this guide</a>. There are 2 types of DMs available. One offers more privacy protection. You can send messages this way by clicking the incognito icon.The recipient must be set up to receive these. Amethyst will initiate more secure DMs automatically, if proper relay configurations are detected.</p>
+          <p>&nbsp;</p>
+          <p>Scroll through verticle style content, similar to a TikTok layout.  Post your media here, using the NIP-95 upload option on your media host or upload video via another nostr client, such as <a href="https://flare.pub/"> flare.pub</a></p>
+          <p>&nbsp;</p>
+          <p>Access nostr Discovery feeds, Marketplace, Group Chats, Live Streams and Communities: </p>
+          <p>*Discovery Feeds</p>
+          <p>A variety of feeds are available through DVMs, aka data vending machines. These feeds are created through AI assisted search run by various nostr users and builders. Some are free, others require payment. All of them offer a wide variety of content for you to explore.</p>
+          <p>*Marketplace</p>
+          <p> Amethyst offers basic marketplace support.  You can list your items for sale, browse, and message sellers.  To purchase via listing or manage your own listings, you will need to visit  <a href="https://shopstr.store/">shopstr.store</a> or any other marketplace client.</p>
+          <p>*Live Streams</p>
+          <p> Watch, zap, and participate in chat for live streams here. If you’re looking for new streamers, switch your feed menu to global. Stream your own content on <a href="https://zap.stream/">zap.stream</a> .</p>
+          <p>*Communities</p>
+          <p> A growing part of nostr is Communities, a more topic based Reddit-like experience.  Amethyst allows you to join and partake in Community discussions.    If you are wanting to start a Community, you’ll need to visit another client, such as <a href="https://satellite.earth/">satellite.earth </a>. Joining a community will add it to your main feed menu. Post to Communities by switching that feed prior to composing your note.</p>
+          <p>*Group Chats            </p>
+          <p>Access &amp; participate in group chats.  To start one, you’ll need to visit your message tab.        </p>
+        </div>
+      </div>
+    </div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="2"><div align="center">
+      <div id="CollapsiblePanel5" class="CollapsiblePanel">
+        <div class="CollapsiblePanelTab" tabindex="0"><img src="optimized/(25.1)note-dropdown-1.jpg" width="288" height="30" /align="center" /> Note Stuff &darr; </div>
+        <div class="CollapsiblePanelContent"> /* update screenshot */
+          <p>*Replies:  Its pretty self explanatory. Click the talk bubble at the bottom of any note to join the conversation.</p>
+          <p>*Boost: also known as bump, share, retweet, or repost... it does just what you’d expect.</p>
+          <p>*Quote: If you have something to add while sharing with your followers, this is the spot. </p>
+          <p>*Fork: You can collaborate with peers on notes, and make sure that the proper credit and tips are given where deserved.  Maybe you have something to add? Maybe you’re writing a story togther? Give it a whirl.</p>
+          <p>*“Likes” express a lot but they can express so much more.  Amethyst is set with preprogrammed reactions, tap and you’ll be presented with your default options. You can program your own, too, by long pressing the reaction button or touching the smiley+ icon, and simply adding the emojis.  You can add as many as you can fit on your screen. Remove the ones you don’t want with the white ‘x’ next to each. Be sure to click save and your good to go!</p>
+          <p>Protip: Amethyst also supports custom emoji packs from nostr apps like <a href="https://emojito.meme">emojito.meme</a> where you can make your own, too.</p>
+          <p>We’ve referred to Zaps repeatedly in this guide, and if you’re unfamiliar, it probably sounds like a foreign language.  Zaps are Bitcoin, demoninated in sats sent over the nostr network for tipping and payment.  You can send and recieve them.  You’ll need a BTC Lightning wallet that supports Lightning Addresses. With that, and different regulations in different countries, its a bit more than we can get into with this guide, but feel free to ask questions to other  users.  Bitcoiners love to help other people learn about bitcoin, so type out your questions and maybe add a #bitcoin or #asknostr tag.  You’ll learn quickly that there’s a lot to learn, but you’ll get the answers you need to get started with zaps pretty quickly. :) </p>
+          <p>When you’re ready, Amethyst offers seamless Nostr Wallet Connect functionality that you can access by long pressing the lightning bolt on any note.  Once you have your wallet attached, you’re ready to zap.  Add your lightning address to your bio, in the field ‘lightning address” and you’re ready to receive.  Amethyst gives you the option to pre-program convenient zap amounts with the same long press, then save.  You can also attach a one-time message &amp; access zap privacy choices by double-tapping the lightning bolt on any note, giving you the ability to remain anonymous, keep it private, or send sats without any nostr event taking place. Reminder: these are a one-use setting, and messages attached to an anonymous zap are publicly seen.</p>
+          <p>*Share a link with your uncool non-nostr friends via njump</p>
+          <p>*The down arrow will display a random, or possibly thorough, view of who and how this note has been reacted to and zapped by. These &quot;little parties&quot; are a fun and simple way to discover other users and the emojis they use.        </p>
+        </div>
+      </div>
+    </div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="2"><div align="center">
+      <div id="CollapsiblePanel6" class="CollapsiblePanel">
+        <div class="CollapsiblePanelTab" tabindex="0"><img src="optimized/(23.1)time-3dot.jpg" width="180" height="75" /align="center" /> Note Menu &darr; </div>
+        <div class="CollapsiblePanelContent">
+          <p>The top right of each note contains a 3dot menu:</p>
+          <p>Common actions include follow/unfollow, copy text, note ID, or author ID, and share a link.</p>
+          <p> *Edit/Propose Edit: When another user proposes an edit, the orignal author is given the option to accept or decline.  When accepted, all previous versions become available, with the most current displaying.</p>
+          <p>&nbsp;</p>
+          <p>*Timestamp: timestamps exists to give a verifiable time to data by stamping it to the btc blockchain, stating that the stamped note did not exist before the stamped time.</p>
+          <p>&nbsp;</p>
+          <p>*Broadcast: Send a copy of any note to all relays willing to receive it.</p>
+          <p>&nbsp;</p>
+          <p>*Bookmarks: Public bookmarks are viewable and accessible by all on your profile.  Private bookmarks are available only to you and are accessible through your main menu.</p>
+          <p>&nbsp;</p>
+          <p>*Content warnings: turn security filters on and off without leaving the feed.</p>
+          <p>&nbsp;</p>
+          <p>*Block/Report: Report illegal content, block/mute who you don’t want to see.        </p>
+          <p>*Request Delete: deletion requests are sent to all relays hosting your note. Most relays honor these requests. Some may not. Check relays' policies for more information.</p>
+        </div>
+      </div>
+    </div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="2"><div align="center">
+      <div id="CollapsiblePanel7" class="CollapsiblePanel">
+        <div class="CollapsiblePanelTab" tabindex="0"><img src="optimized/(32)bottom-notifications.jpg" width="360" height="53" /align="center" /> Notifications &darr; </div>
+        <div class="CollapsiblePanelContent">
+          <p>Your notifications menu contains line graph of all interactions received during a 7 day period, accessable from the dropdown on the top left.</p>
+          <p>Filter your notifications to your follows or by lists with the feed menu.</p>
+          <p>After each update, Amethyst will prompt you to consider making a donation to the project. This is a free open source software project, built by a team dedicated to the ethos of the nostr protocol.</p>
+        </div>
+      </div>
+    </div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="2"><div align="center">
+      <div id="CollapsiblePanel8" class="CollapsiblePanel">
+        <div class="CollapsiblePanelTab" tabindex="0"><img src="optimized/(26)compose.jpg" width="170" height="171" /align="center" /> Write a Note &darr; </div>
+        <div class="CollapsiblePanelContent">
+          <p align="center">Hit the ‘+’ and say hello, or whatever you want to say.  You can add all sorts of amendments to your notes too:</p>
+          <p align="center"> *Add photos and videos, choose where they are hosted, add a content warning, or an accessability description.</p>
+          <p align="center"> *Add a btc lightning invoice to your note to request a payment.</p>
+          <p align="center"> *Write a listing for nostr marketplace.</p>
+          <p align="center">*Add a zap-to-vote poll.</p>
+          <p align="center">*Split &amp; Forward zaps to another user. </p>
+          <p align="center">*Zapraiser: set a visual goal for how much you would like to earn on a note. </p>
+          <p align="center">*Add an NSFW warning.</p>
+          <p align="center">*Tag your geolocation. </p>
+          <p align="center">If you have a narrow screen, you may need to swipe left on this ribbon to access all options.
+            Hit ‘post’ in the top, right and you’re speaking live on NOSTR! </p>
+          <p align="center">Drafts are encrypted and autosaved to relays as you create your notes.  To access them, open your main menu and click drafts.  The 3dot menu on each note will have an “edit draft” option. Just tap that to resume composition.
+            
+            Once published, your notes are decrypted on the relays.          </p>
+          <p align="center">You can choose which relays you would like to write to, with the relay icon at the top center of the screen. Toggle them on and off as needed. Be sure to hit save, but know that these settings are reset for each note.        </p>
+        </div>
+      </div>
+    </div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="2"><div align="center">
+      <div id="CollapsiblePanel9" class="CollapsiblePanel">
+        <div class="CollapsiblePanelTab" tabindex="0">Main Menu &darr; </div>
+        <div class="CollapsiblePanelContent">
+          <p>Access your main menu by swiping left from your feed or click on your profile picture.</p>
+          <p>&nbsp;</p>
+          <p>*Status: Your status will display under your pfp in most places that it appears. To clear, delete any text and tap save.</p>
+          <p>&nbsp;</p>
+          <p><a href="#Profile">*Profile: we did this already :)</a></p>
+          <p>&nbsp;</p>
+          <p>*Bookmarks: access and manage your public and private bookmarks here.</p>
+          <p>&nbsp;</p>
+          <p>*Drafts: Access and edit drafts. Swipe left to delete individual notes, or delete all at the top.</p>
+          <p>&nbsp;</p>
+          <p><a href="#Relays">*Relays: Relay management settings are here, addressed further down in this guide.</a></p>
+          <p>&nbsp;</p>
+          <p>Media Servers: Add <a href="https://github.com/nostr-protocol/nips/blob/master/96.md" target="new">custom media servers</a> to your default list.</p>
+          <p>&nbsp;</p>
+          <p>*Security Filters: Manage your NSWF filters, block list, and muted words. Hidden words can be used on URLs (including images), any word in a bio, and emojis.</p>
+          <p> If you find yourself muting a lot of accounts, take time to learn about different relays and what they can offer to help you moderate your experience.
+            
+            It is strongly reccommended that you be aware of what is considered illegal content in your area, so that you may report it to relay operators.  Operators will verify before removing.</p>
+          <p>&nbsp;</p>
+          <p>*Back up Keys: copy your nsec to your clipboard or encrypt and secure with a password(recommended)</p>
+          <p>&nbsp;</p>
+          <p>*Tor Controls: /* this will be changing a lot soon. Check back */</p>
+          <p>&nbsp;</p>
+          <p>*Settings: Manage your theme, language, image/video/url preview/pfps data consumption, and UI mode for data saving.</p>
+          <p>&nbsp;</p>
+          <p>*Accounts: Switch between accounts and sign out as needed. Reminder: secure your nsec BEFORE signing out of any account.</p>
+          <p>&nbsp;</p>
+          <p>Tap on the version number to read Amethyst's latest release.  There is also a QR code that links to your profile.</p>
+        </div>
+      </div>
+    </div>
+    <div align="center"></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="2"><div align="center">
+      <div id="CollapsiblePanel10" class="CollapsiblePanel">
+        <div class="CollapsiblePanelTab" tabindex="0">Exploring Profiles &darr; </div>
+        <div class="CollapsiblePanelContent">
+          <p>Badges issued and accepted will display on your profile. Visit <a href="https://emojito.meme/">emojito.meme</a> or any other nostr badge client to claim or create.</p>
+          <p>You can display recommended apps on your profile by visiting <a href="https://nostrapp.link/">nostrapp.link</a> .</p>
+          <p>Copy/share/bring up a QR for any profile. You can also find a link to share in the 3dot menu in th top right corner.</p>
+          <p>Send a tip directly to anyone by clicking their LNaddress.</p>
+          <p>Send a DM directly from a user's profile.\</p>
+          <p>&nbsp;</p>
+          <p>TABS beyond notes:</p>
+          <p>Gallery: Browse media curated by the user. Add to your own by opening any image or video and tapping the share icon. Click on &quot;add to gallery&quot;. You can highlight your own work or showcase your favorite things. To remove any image, visit your gallery and longpress the thumbnail.</p>
+          <p>Public bookmarks: This is a great place to collect what you write or read. Amethyst does support longform posts and wikis. Visit any nostr writing client like <a href="https://notestack.com/" target="new">notestack</a> or <a href="https://wikifreedia.xyz/" target="new">wikifreedia</a> to compose longer works.</p>
+          <p>Hashtags: Followed hashtags display here and can be unfollowed from here, too.</p>
+          <p>Relays: If you think you are missing notes from your follows, you can check which relays they are using here and add to your own list.        </p>
+        </div>
+      </div>
+    </div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="2"><div align="center">
+      <div id="CollapsiblePanel11" class="CollapsiblePanel">
+        <div class="CollapsiblePanelTab" tabindex="0">Other Useful Things &darr; </div>
+        <div class="CollapsiblePanelContent">
+          <p>Amber reference &amp; link</p>
+          <p>link Vitor's relay 101</p>
+          <p>link Ryan's Dm/Tor note</p>
+          <p> link dawns FAQ wiki       </p>
+        </div>
+      </div>
+    </div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="2"><div align="center">
+      <div id="CollapsiblePanel12" class="CollapsiblePanel">
+        <div class="CollapsiblePanelTab" tabindex="0"><a name="Relays" id="Relays"></a><img src="optimized/(29)note-relay-menu.jpg" width="258" height="158" /align="center"> Relays &darr; </div>
+        <div class="CollapsiblePanelContent">
+          <p>If you’re new to nostr, you shouldn’t have to worry too much about understanding relays until you get a little comfortable.  Amethyst is set with default relays to get you going, right out of the box, and it will guide you through adding what you need. Here is some basic information on various relays, Amethyst's settings, and how they can enhance your nostr experience:</p>
+          <p>PUBLIC OUTBOX/HOME: These are the relays you wish to publish to for others to find your notes. You can write to free, public access relays. Paid, WoT(web of trust), and other specialty relays can be used here, too, each with their own benefits. Some will help to ensure your notes are not lost among spam. Others will limit who sees your content, based on topics, location, character count, or many other criteria. There are relay services to archive your content and those that will remove it after a predetermined time. The options are endless.</p>
+          <p>PUBLIC INBOX RELAYS: These relays are generally the same as free, public relays. They will act as your basket for collecting reactions, zap notifications, replies, and any other interaction other users may send you. Paid relays can be used here, but for best results, make sure they support the <a href="https://github.com/nostr-protocol/nips?tab=readme-ov-file#event-kinds" target="new">event types</a> you wish to see.</p>
+          <p>DM INBOX RELAYS: These relays may specialize in sending and receiving metadata obfuscated messages. Others will support basic DMs with no added privacy. Most public relays support this. If you want to receive both types of messages, set a public relay, as well as a private DM specific relay.</p>
+          <p>PRIVATE HOME RELAYS: These relays will store your personal and encrypted information, like your drafts &amp; settings. Its recommended that this be a relay that you control. You can run one from home server, on your device, or pay for a relay hosting service.</p>
+          <p>SEARCH RELAYS: These relays excel at searching for people, notes, and text. Most are free to use but essential for looking up other users. </p>
+          <p>LOCAL RELAYS: This type will run on your device. There is currently one application for android. Find it on <a href="https://zap.store/download/" target="new">zap.store</a> .</p>
+          <p>GENERAL RELAYS: These are the relays that amethyst will look at to find notes from your follows. Check with your friends, see what they use and add as you see fit. There will also be some suggestions listed below this section. Settings here are actively usable. Up is write, down is read. You can turn those on and off, as well as whether these relays will send/provide data and content to your Global feed, your messages, and your contact lists. </p>
+          <p>Be sure to click ‘save’ after any adjustments you make.</p>
+          <p>&nbsp;</p>
+          <p>In complete UI mode,  you’ll notice little icons under the pfp next to a note.  These are the relays where a note was found.  Clicking on them will bring you to the relay card, providing you with information like who runs that relay and what types of nostr events they support.  Consider visiting a relay operator’s page and tipping some sats.</p>
+          <p>&nbsp;</p>
+          <p>To find new relays, visit a relay explorer like <a href="https://nostr.watch/relays/find">nostr.watch</a> or <a href="https://nostrrr.com/" target="new">nostrrr.com</a> . Check out some paid relay services at <a href="https://nostr.wine/" target="new">nostr.wine</a>  , <a href="https://relay.tools/" target="new">relay.tools</a> , and <a href="https://nostr.land/" target="new">nostr.land</a> .</p>
+        </div>
+      </div>
+    </div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="2">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="2">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="2">   <div align="center"><img src="../amethyst pix/amy-nobg.png" width="916" height="543" alt="Amy" /align="center" / />Amy says &quot;GM!&quot;</div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="2">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="2">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="2">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<script type="text/javascript">
+var CollapsiblePanel1 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel1", {contentIsOpen:false});
+var CollapsiblePanel2 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel2", {contentIsOpen:false});
+var CollapsiblePanel3 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel3", {contentIsOpen:false});
+var CollapsiblePanel4 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel4", {contentIsOpen:false});
+var CollapsiblePanel5 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel5", {contentIsOpen:false});
+var CollapsiblePanel6 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel6", {contentIsOpen:false});
+var CollapsiblePanel7 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel7", {contentIsOpen:false});
+var CollapsiblePanel8 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel8", {contentIsOpen:false});
+var CollapsiblePanel9 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel9", {contentIsOpen:false});
+var CollapsiblePanel10 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel10", {contentIsOpen:false});
+var CollapsiblePanel11 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel11", {contentIsOpen:false});
+var CollapsiblePanel12 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel12", {contentIsOpen:false});
+</script>
+<footer>
+  <p align="center">Made with &#x2764;&#xfe0f; by: <a href="https://njump.me/npub1cgcwm56v5hyrrzl5ty4vq4kdud63n5u4czgycdl2r3jshzk55ufqe52ndy" target="new">Dawn</a><br>
+     Contribute to this page on Github<br></p>
+</footer>
+</body>
+</html>
